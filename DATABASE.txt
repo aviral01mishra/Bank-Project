@@ -1,0 +1,10 @@
+//database
+create table employee(name varchar(20) NOT NULL,password varchar(20) NOT NULL,email varchar(50) NOT NULL,contact number NOT NULL);
+
+create table accountdata(name varchar(20) NOT NULL,accountno number NOT NULL,adhar number NOT NULL,mobileno number NOT NULL,email varchar2(50) not null,fathername varchar(20) NOT NULL,accounttype varchar(20) NOT NULL,balance number NOT NULL,gender varchar(20) NOT NULL,updatedata varchar(20));
+
+create table credit(name varchar(20) NOT NULL,amount number NOT NULL,datecrdit VARCHAR2(25) NOT NULL);
+
+create table debit(name varchar(20) NOT NULL,amount number NOT NULL,datedebit date NOT NULL);
+
+create table transaction(name varchar(20)NOT NULL,sender number NOT NULL,reciever number NOT NULL,amount number NOT NULL,datetransaction date NOT NULL);
